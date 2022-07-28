@@ -201,12 +201,12 @@ header h1 {
 }
 
 .selected {
-  background-color: #c0392b;
+  background-color: #8c43ff;
   color: #fff;
 }
 
 .btn:hover {
-  background-color: #c0392b;
+  background-color: #8c43ff;
   color: #fff;
 }
 
@@ -246,7 +246,7 @@ header h1 {
 }
 
 .master-panel .btn:last-child:hover {
-  background-color: #c0392b;
+  background-color: #8c43ff;
   color: #fff;
 }
 
