@@ -9,7 +9,9 @@ const initFactory = () => {
   init({
     defaultImgUrl: 'https://images.unsplash.com/photo-1644224076179-31d622e21511?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80',
     defaultTitle: '제목을 입력하세요',
-    defaultSubTitle: 'JINIWORKS WEB MANUEL',
+    defaultSubTitle: 'JINIWORKS WEB MANUAL',
+    defaultTitleFontSize: '65px',
+    defaultSubTitleFontSize: '22px',
   });
 }
 
@@ -196,8 +198,8 @@ const init = function (opt) {
     e.value = '';
   });
 
-  prevTitle.style.fontSize = '65px';
-  prevSubtitle.style.fontSize = '22px';
+  prevTitle.style.fontSize = opt.defaultTitleFontSize;
+  prevSubtitle.style.fontSize = opt.defaultSubTitleFontSize;
 
   componentsBtns[0].classList.add('selected');
   inputFields[0].focus();
