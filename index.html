@@ -8,9 +8,6 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
-    rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <script defer src="./resource/html2canvas.min.js"></script>
   <script defer src="app.js"></script>
@@ -21,50 +18,51 @@
 <body>
 
   <section class="wrapper">
-    <article class="contents">
-      <header>
-        <h1>Thumbnail Generator</h1>
-      </header>
-      <div id="capture" class="preview">
-        <ul class="components" id="comp-opt1">
-          <li class="render subtitle">부제목을 입력하세요</li>
-          <li class="render title">제목을 입력하세요</li>
-        </ul>
+    <section class="container">
+      <div class="top-bar">
+        <span class="ico-circle"></span>
       </div>
-      <div class="control-panel">
-        <div class="inputFields">
-          <input class="input-field input-subtitle" data-set="subtitle" type="text" spellcheck="false"
-            placeholder="부제목을 입력하세요">
-          <input class="input-field input-title" data-set="title" type="text" spellcheck="false"
-            placeholder="제목을 입력하세요">
+      <div class="contents">
+        <div id="capture" class="preview">
+          <ul class="components" id="comp-opt1">
+            <li class="render subtitle">부제목을 입력하세요</li>
+            <li class="render title">제목을 입력하세요</li>
+          </ul>
         </div>
+        <div class="control-panel font-poppins">
+          <div class="inputFields">
+            <input class="input-field input-subtitle" data-set="subtitle" type="text" spellcheck="false"
+              placeholder="부제목을 입력하세요">
+            <input class="input-field input-title" data-set="title" type="text" spellcheck="false"
+              placeholder="제목을 입력하세요">
+          </div>
 
-        <div class="background-btns">
-          <span class="background-txt">Background</span>
-          <div id="background-btn-container" class="btns">
-            <button class="btn random-gradient">Random Gradient</button>
-            <button class="btn random-solid">Random Color</button>
-            <button class="btn img-url">Image URL</button>
+          <div class="background-btns">
+            <span class="background-txt">Background</span>
+            <div id="background-btn-container" class="btns">
+              <button class="btn random-gradient">Random Gradient</button>
+              <button class="btn random-solid">Random Color</button>
+              <button class="btn img-url">Image URL</button>
+            </div>
+          </div>
+
+          <div class="components-btns">
+            <span class="components-txt">Title Layout</span>
+            <div id="component-btn-container" class="btns">
+              <button data-set="comp-opt1" class="btn component-opt selected">Title / Sub Title</button>
+              <button data-set="comp-opt2" class="btn component-opt">Only Title</button>
+            </div>
+          </div>
+
+          <div class="master-panel">
+            <button class="btn" id="initialize">Reset</button>
+            <button class="btn" id="export">Generate</button>
           </div>
         </div>
-
-        <div class="components-btns">
-          <span class="components-txt">Title</span>
-          <div id="component-btn-container" class="btns">
-            <button data-set="comp-opt1" class="btn component-opt selected">Title / Sub Title</button>
-            <button data-set="comp-opt2" class="btn component-opt">Only Title</button>
-          </div>
-        </div>
-
-        <div class="master-panel">
-          <button class="btn" id="initialize">Reset</button>
-          <button class="btn" id="export">Generate</button>
-        </div>
-
       </div>
-    </article>
+    </section>
   </section>
-  <section class="mod capture_modal hidden"></section>
+  <section class="mod capture-modal hidden"></section>
   <div class="mod overlay hidden"></div>
 
 </body>

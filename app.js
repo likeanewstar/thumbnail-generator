@@ -15,7 +15,7 @@ const initFactory = () => {
 
 // HTML2CANVAS API
 const produceImageBtn = document.querySelector('#export');
-const captureModal = document.querySelector('.capture_modal');
+const captureModal = document.querySelector('.capture-modal');
 const mod = document.querySelectorAll('.mod');
 const overlay = document.querySelector('.overlay');
 
