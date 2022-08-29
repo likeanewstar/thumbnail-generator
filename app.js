@@ -170,16 +170,8 @@ imgBtn.addEventListener('click', imageBackground);
 // TEXT STYLE FUNCTIONS
 const prevTitle = document.querySelector('.title');
 const prevSubtitle = document.querySelector('.subtitle');
-const prevCategory = document.querySelector('.category');
 const allBtns = document.querySelectorAll('.btn');
 const initBtn = document.querySelector('#initialize');
-
-const textstyleContainer = document.querySelector('.text-style');
-const textShadowBtn = document.querySelector('.text-shadow');
-const textInvertBtn = document.querySelector('.text-invert');
-const textSizeBtn = document.querySelector('.text-size');
-const textstyleBtns = document.querySelectorAll('.text-btn');
-const renderTxt = document.querySelectorAll('.render');
 
 const init = function (opt) {
   domBody.style.background =

@@ -34,6 +34,9 @@ body:after {
   backdrop-filter: blur(10px);  
 }
 
+input, textarea, pre {
+  font-family: inherit;
+}
 
 /* common */
 .font-poppins {
@@ -179,6 +182,9 @@ body:after {
   margin-right: 0;
 }
 
+textarea.input-field {
+  padding-top: 8px;
+}
 
 /* button */
 .btn {
